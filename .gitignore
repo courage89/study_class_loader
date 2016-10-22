@@ -1,3 +1,9 @@
 /simple_class_loader/.idea
 /simple_jar1/.idea
 /simple_jar2/.idea
+/simple_class_loader/target/
+/simple_jar1/target/
+/simple_jar2/target/
+/simple_class_loader/simple_class_loader.iml
+/simple_jar1/simple_jar1.iml
+/simple_jar2/simple_jar2.iml

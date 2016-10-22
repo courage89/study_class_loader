@@ -1,0 +1,13 @@
+相同包结构类名的加载
+
+1、jar1在前--->输出hello world from simple_jar1
+java -cp C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar1\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar;C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar2\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar com.qingqing.study.classloader.domain.HelloWorld
+
+2、jar2在前--->输出hello world from simple_jar2
+java -cp C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar2\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar;C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar1\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar com.qingqing.study.classloader.domain.HelloWorld
+
+3、只含有jar1--->输出hello world from simple_jar1
+java -cp C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar1\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar com.qingqing.study.classloader.domain.HelloWorld
+
+4、只含有jar2--->输出hello world from simple_jar2
+java -cp C:\Users\xuya\.m2\repository\com\qingqing\study\classloader\jar2\study_class_loader\1.0-SNAPSHOT\study_class_loader-1.0-SNAPSHOT.jar com.qingqing.study.classloader.domain.HelloWorld
